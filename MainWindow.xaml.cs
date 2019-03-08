@@ -25,4 +25,5 @@ namespace DiaryOfAnAthlete
             InitializeComponent();
         }
     }
+
 }
