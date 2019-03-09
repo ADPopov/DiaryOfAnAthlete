@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiaryOfAnAthlete"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="564" MinWidth="899" Height="621" Width="1000" WindowStartupLocation="CenterScreen" >
+        Title="MainWindow" MinHeight="564" MinWidth="1000" Height="621" Width="1000" WindowStartupLocation="CenterScreen" >
 
 
     <Grid ShowGridLines="False">
