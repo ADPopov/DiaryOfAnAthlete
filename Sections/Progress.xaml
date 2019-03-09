@@ -9,6 +9,76 @@
       Title="Progress" Background="White">
 
     <Grid>
-        <TextBlock Text="Section Progress in development" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="SF UI Display" FontWeight="Thin"></TextBlock>
+        <Grid ShowGridLines="False" Background="White">
+
+            <Rectangle Fill="#eeeeee"/>
+            <Rectangle Grid.Row="1" Fill="#bfbfbf"></Rectangle>
+            <Rectangle Grid.Row="3" Fill="#bfbfbf"></Rectangle>
+
+            <TextBlock Text="Текущие цели спортсмена" Grid.Row="2" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10,5,5" FontFamily="Thin" />
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.Column="1" Fill="#bfbfbf" StrokeThickness="2"/>
+            </Grid>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*" ></ColumnDefinition>
+                    <ColumnDefinition Width="201*"></ColumnDefinition>
+                    <ColumnDefinition Width="1"></ColumnDefinition>
+                    <ColumnDefinition Width="177*"></ColumnDefinition>
+                    <ColumnDefinition Width="1"></ColumnDefinition>
+                    <ColumnDefinition Width="268*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Row="0" 
+                       Margin="8" 
+                       Source="/DiaryOfAnAthlete;component/Recurces/avatar.png"
+                       MaxHeight="150"
+                       MaxWidth="150"/>
+
+                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5,42" Height="46">
+                    <TextBlock Grid.Column="1" 
+                           Text="Александр Попов" 
+                           FontSize="26" FontFamily="Myriad Set Pro" FontWeight="Thin" TextTrimming="WordEllipsis"/>
+                    <TextBlock Text="ID 625545" FontSize="13" FontFamily="SF UI Text" Foreground="#FF5B5353"/>
+                </StackPanel>
+
+                <Rectangle Grid.Column="2" Stroke="#FF8F8F8F" Margin="0,44" MaxHeight="44"></Rectangle>
+
+                <StackPanel Grid.Column="3" VerticalAlignment="Center" Margin="5,44" Height="42">
+                    <TextBlock Text="Дело спортсмена" FontSize="15" FontFamily="SF UI Text Margin" Margin="15,4,0,0"/>
+                    <TextBlock Text="Перейти" 
+                               Cursor="Hand"
+                               FontSize="15"  FontFamily="SF UI Text" FontWeight="Thin"
+                               Foreground="#FF0074FF"
+                               Margin="15,2,0,0"/>
+                </StackPanel>
+
+                <Rectangle Grid.Column="4" Stroke="#FF8F8F8F" Margin="0,44,268,44" MaxHeight="44" Grid.ColumnSpan="2"/>
+
+                <StackPanel Grid.Column="5" VerticalAlignment="Center" Margin="5,44" Height="42" >
+                    <TextBlock Text="Организция" FontSize="15" FontFamily="SF UI Text Margin" Margin="15,4,0,0"/>
+                    <TextBlock Text="Перейти" 
+                               Cursor="Hand"
+                               FontSize="15"  FontFamily="SF UI Text" FontWeight="Thin"
+                               Foreground="#FF0074FF"
+                               Margin="15,2,0,0"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80*" ></RowDefinition>
+                <RowDefinition Height="2"></RowDefinition>
+                <RowDefinition Height="58*"></RowDefinition>
+                <RowDefinition Height="2"></RowDefinition>
+                <RowDefinition Height="137*"></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
     </Grid>
 </Page>

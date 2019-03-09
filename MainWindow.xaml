@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiaryOfAnAthlete"
         mc:Ignorable="d"
-        Title="MainWindow" Height="621" Width="1000" WindowStartupLocation="CenterScreen" >
+        Title="MainWindow" MinHeight="564" MinWidth="899" Height="621" Width="1000" WindowStartupLocation="CenterScreen" >
 
 
     <Grid ShowGridLines="False">
@@ -18,11 +18,11 @@
         <Rectangle Grid.Row="1" Fill="#007aff"></Rectangle>
 
         <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Советы" Click="BtnRecommendations"/>
-            <Button Content="Тренировки" Click="BtnTrainings"/>
-            <Button Content="Прогресс" Click="BtnProgress"/>
-            <Button Content="Расписание" Click="BtnSchudule"/>
-            <Button Content="Цели" Click="BtnPurpose"/>
+            <Button Content="Советы" Click="BtnRecommendations" Name="IsRecommendations"/>
+            <Button Content="Тренировки" Click="BtnTrainings" Name="IsTrainings"/>
+            <Button Content="Прогресс" Click="BtnProgress" Name="IsProgress"/>
+            <Button Content="Расписание" Click="BtnSchudule" Name="IsSchudule"/>
+            <Button Content="Цели" Click="BtnPurpose" Name="IsPurpose"/>
         </StackPanel>
 
         <Frame Grid.Row="2" x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
