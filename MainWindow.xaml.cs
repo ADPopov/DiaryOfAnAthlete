@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiaryOfAnAthlete.Sections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,32 @@ namespace DiaryOfAnAthlete
         {
             InitializeComponent();
         }
+
+        private void BtnProgress(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Progress();
+        }
+
+        private void BtnPurpose(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Purpose();
+        }
+
+        private void BtnRecommendations(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Recommendations();
+        }
+
+        private void BtnSchudule(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Schedule();
+        }
+
+        private void BtnTrainings(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Trainings();
+        }
+
     }
 
 }

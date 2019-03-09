@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:DiaryOfAnAthlete"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Progress">
+      Title="Progress" Background="White">
 
     <Grid>
-        
+        <TextBlock Text="Section Progress in development" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="SF UI Display" FontWeight="Thin"></TextBlock>
     </Grid>
 </Page>
