@@ -50,7 +50,6 @@ namespace DiaryOfAnAthlete
         {
             Main.Content = new Trainings();
         }
-
     }
 
 }
