@@ -40,14 +40,14 @@
                     </Grid.RowDefinitions>
                     <Rectangle Grid.Row="1" Fill="#007aff" ></Rectangle>
 
-                    <TextBox Grid.Row="0" Margin="4,0,3,0" Text="Логин" VerticalContentAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="#FFC3C3C3" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Style="{DynamicResource SignInBox}"/>
+                    <TextBox Grid.Row="0" Margin="20,0,3,0" VerticalContentAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="Black" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Style="{DynamicResource SignInBox}"/>
 
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="277"></ColumnDefinition>
                             <ColumnDefinition Width="42"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <TextBox Grid.Column="0" Margin="4,0,0,0" VerticalContentAlignment="Center" Text="Пароль" VerticalAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="#FFC3C3C3" Height="45" Style="{DynamicResource SignInBox}"></TextBox>
+                        <PasswordBox Grid.Column="0" Margin="20,0,0,0" VerticalContentAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="Black" Height="45" BorderBrush="Black" Style="{DynamicResource PasswordBoxStyle}"></PasswordBox>
                         <Button Click="SignIn" Grid.Column="1" Margin="5,5,5,5" BorderBrush="{x:Null}" Foreground="{x:Null}" >
                             <Button.Background>
                                 <ImageBrush ImageSource="Resources/icon__sign_in.png" Stretch="Uniform"/>
