@@ -72,7 +72,6 @@
     <Compile Include="Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Sections\Purpose.xaml.cs">
       <DependentUpon>Purpose.xaml</DependentUpon>
     </Compile>
