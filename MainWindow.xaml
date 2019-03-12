@@ -17,12 +17,12 @@
 
         <Rectangle Grid.Row="1" Fill="#007aff"></Rectangle>
 
-        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Советы" Click="BtnRecommendations" Name="IsRecommendations"/>
-            <Button Content="Тренировки" Click="BtnTrainings" Name="IsTrainings"/>
-            <Button Content="Прогресс" Click="BtnProgress" Name="IsProgress"/>
-            <Button Content="Расписание" Click="BtnSchudule" Name="IsSchudule"/>
-            <Button Content="Цели" Click="BtnPurpose" Name="IsPurpose"/>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button Content="Советы" Click="BtnRecommendations" Name="IsRecommendations" Style="{DynamicResource BtnMenu}"/>
+            <Button Content="Тренировки" Click="BtnTrainings" Name="IsTrainings" Style="{DynamicResource BtnMenu}"/>
+            <Button Content="Прогресс" Click="BtnProgress" Name="IsProgress" Style="{DynamicResource BtnMenu}"/>
+            <Button Content="Расписание" Click="BtnSchudule" Name="IsSchudule" Style="{DynamicResource BtnMenu}"/>
+            <Button Content="Цели" Click="BtnPurpose" Name="IsPurpose" Style="{DynamicResource BtnMenu}"/>
         </StackPanel>
 
         <Frame Grid.Row="2" x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
