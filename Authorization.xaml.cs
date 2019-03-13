@@ -34,11 +34,18 @@ namespace DiaryOfAnAthlete.Sections
             Close();
         }
 
-        private void SignIn(object sender, RoutedEventArgs e)
+        private void SignInBtn(object sender, RoutedEventArgs e)
         {
-            Window mainWindow = new MainWindow();
-            mainWindow.Show();
-            Close();
+            if (InputPassword.Password == "admin" && LoginInput.Text == "AlexPopov")
+            {
+                Window mainWindow = new MainWindow();
+                mainWindow.Show();
+                Close();
+            }
+            else
+            {
+                WrongInputText.Text = "Неверный логин или пароль";
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DiaryOfAnAthlete.Sections"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         mc:Ignorable="d"
-        Title="Authorization" Height="350" Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" WindowStyle="None" SnapsToDevicePixels="True">
+        Title="Authorization" Height="350" Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="None" SnapsToDevicePixels="True">
    
     <Grid>
         <Grid>
@@ -31,7 +31,7 @@
                      Foreground="#FFCBCBCB" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
             <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30,0,29,10" Text="Войти в систему" Foreground="White" FontFamily="SF UI Text" FontWeight="Bold" FontSize="30" Height="36" Width="260" />
-            <Border Grid.Row="2" Grid.Column="1" Background="White" CornerRadius="6" BorderBrush="#FFD6D6D6">
+            <Border Grid.Row="2" Grid.Column="1" Background="White" CornerRadius="6" BorderBrush="#FF7E7E7E" BorderThickness="1">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
@@ -40,23 +40,25 @@
                     </Grid.RowDefinitions>
                     <Rectangle Grid.Row="1" Fill="#007aff" ></Rectangle>
 
-                    <TextBox Grid.Row="0" Margin="20,0,3,0" VerticalContentAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="Black" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Style="{DynamicResource SignInBox}"/>
+                    <TextBox Grid.Row="0" Margin="20,0,3,0" Name="LoginInput" VerticalContentAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="Black" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Style="{DynamicResource SignInBox}"/>
 
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="277"></ColumnDefinition>
                             <ColumnDefinition Width="42"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <PasswordBox Grid.Column="0" Margin="20,0,0,0" VerticalContentAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="Black" Height="45" BorderBrush="Black" Style="{DynamicResource PasswordBoxStyle}"></PasswordBox>
-                        <Button Click="SignIn" Grid.Column="1" Margin="5,5,5,5" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+
+                        <PasswordBox Name="InputPassword"  Style ="{DynamicResource PasswordBoxStyle}"  Grid.Column="0" Margin="20,0,0,0" VerticalContentAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="SF UI Text" Foreground="Black" Height="45" BorderBrush="Black"></PasswordBox>
+
+                        <Button Click="SignInBtn" Name="BtnSignIn" Grid.Column="1" AutomationProperties.HelpText="Войти" Style="{DynamicResource SignInBtn}" Cursor="Hand" Width="30" Height="30">
                             <Button.Background>
-                                <ImageBrush ImageSource="Resources/icon__sign_in.png" Stretch="Uniform"/>
+                                <ImageBrush ImageSource="Resources/circled_down_enabled.png" Stretch="Uniform"/>
                             </Button.Background>
                         </Button>
                     </Grid>
                 </Grid>
-            </Border>
-
+             </Border>
+            <TextBlock Name="WrongInputText" Grid.Column="1" Grid.Row="3" Text="" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
         </Grid>
     </Grid>
 </Window>
