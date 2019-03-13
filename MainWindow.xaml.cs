@@ -24,6 +24,7 @@ namespace DiaryOfAnAthlete
         public MainWindow()
         {
             InitializeComponent();
+            Main.Content = new Progress();
         }
 
         private void BtnProgress(object sender, RoutedEventArgs e)

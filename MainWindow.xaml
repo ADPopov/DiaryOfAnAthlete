@@ -24,7 +24,6 @@
             <Button Content="Расписание" Click="BtnSchudule" Name="IsSchudule" Style="{DynamicResource BtnMenu}"/>
             <Button Content="Цели" Click="BtnPurpose" Name="IsPurpose" Style="{DynamicResource BtnMenu}"/>
         </StackPanel>
-
         <Frame Grid.Row="2" x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>
